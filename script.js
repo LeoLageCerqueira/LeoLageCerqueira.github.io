@@ -1,6 +1,11 @@
 const cards = document.querySelectorAll(".card");
 
 $(document).ready(function(){
+    $(".card").css("pointer-events", "none")
+        setTimeout(() => {
+            $(".card").css("pointer-events", "auto")
+
+        }, 4000);
     $(".start").click(function(){
         randomizar();
         transitionInicio();
